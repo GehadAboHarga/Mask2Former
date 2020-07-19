@@ -156,7 +156,7 @@ class AsyncPredictor:
                 result = predictor(data)
                 self.result_queue.put((idx, result))
 
-    def __init__(self, cfg, num_gpus: int = 1):
+    def __init__(self, cfg, num_gpus: int = 0):
         """
         Args:
             cfg (CfgNode):
